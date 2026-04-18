@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EP Jato | Vidros · Alumínio · Jatos – Rio de Janeiro</title>
+  <meta name="description" content="EP Jato: especialistas em vidros, alumínio e jatos no Rio de Janeiro. Pronta entrega e orçamento sem compromisso. Sua obra merece o melhor!" />
+  <meta name="keywords" content="vidros, jateamento, alumínio, EP Jato, Rio de Janeiro, Bandeirantes, vidraçaria, esquadria" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" id="nav-logo-link">
+        <img src="assets/logo.png" alt="EP Jato de Vidros" class="nav-logo-img" id="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio" class="nav-link active" id="nav-inicio">Início</a></li>
+        <li><a href="#servicos" class="nav-link" id="nav-servicos">Serviços</a></li>
+        <li><a href="#sobre" class="nav-link" id="nav-sobre">Sobre</a></li>
+        <li><a href="#diferenciais" class="nav-link" id="nav-diferenciais">Diferenciais</a></li>
+        <li><a href="#contato" class="nav-link" id="nav-contato">Contato</a></li>
+      </ul>
+
+      <a href="https://wa.me/5521000000000?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+         class="btn-orcamento" id="btn-orcamento-nav" target="_blank" rel="noopener">
+        📲 Orçamento
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#inicio" class="mobile-link" id="m-inicio">Início</a></li>
+      <li><a href="#servicos" class="mobile-link" id="m-servicos">Serviços</a></li>
+      <li><a href="#sobre" class="mobile-link" id="m-sobre">Sobre</a></li>
+      <li><a href="#diferenciais" class="mobile-link" id="m-diferenciais">Diferenciais</a></li>
+      <li><a href="#contato" class="mobile-link" id="m-contato">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="assets/hero.png" alt="Fachada de vidro moderna" class="hero-img" id="hero-bg-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <!-- Floating Cards -->
+    <div class="float-card float-card--tl" id="float-card-delivery">
+      <span class="float-card__icon">📦</span>
+      <div>
+        <p class="float-card__label">Disponível Agora</p>
+        <p class="float-card__value">Pronta Entrega!</p>
+      </div>
+    </div>
+
+    <div class="float-card float-card--br" id="float-card-hours">
+      <span class="float-card__icon">🗓</span>
+      <div>
+        <p class="float-card__label">Horário de Atendimento</p>
+        <p class="float-card__value">Seg–Sex · 8h às 17h30</p>
+      </div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="hero-tag" id="hero-tag">
+        <span class="tag-dot"></span>
+        Vidros · Alumínio · Jatos
+      </div>
+
+      <h1 class="hero-title" id="hero-title">
+        <span class="hero-title__line">Sua Casa</span>
+        <span class="hero-title__line hero-title__line--accent">Merece o</span>
+        <span class="hero-title__line hero-title__line--outline">Melhor!</span>
+      </h1>
+
+      <p class="hero-sub" id="hero-sub">
+        Soluções premium em vidros, alumínio e jatos para residências e empreendimentos no Rio de Janeiro.
+      </p>
+
+      <div class="hero-actions" id="hero-actions">
+        <a href="https://wa.me/5521000000000?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+           class="btn btn--primary" id="btn-hero-orcamento" target="_blank" rel="noopener">
+          📲 Solicitar Orçamento ↗
+        </a>
+        <a href="#servicos" class="btn btn--ghost" id="btn-hero-servicos">
+          Ver Serviços
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" id="scroll-indicator" aria-hidden="true">
+      <div class="scroll-indicator__line"></div>
+      <span>Explorar</span>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <div class="stats-bar" id="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item" id="stat-anos">
+        <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+        <p class="stat-label">Anos de Mercado</p>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-item" id="stat-obras">
+        <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+        <p class="stat-label">Obras Realizadas</p>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-item" id="stat-clientes">
+        <span class="stat-number" data-target="1200">0</span><span class="stat-suffix">+</span>
+        <p class="stat-label">Clientes Satisfeitos</p>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-item" id="stat-entrega">
+        <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+        <p class="stat-label">Pronta Entrega</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SERVIÇOS ========== -->
+  <section class="section services" id="servicos">
+    <div class="section-container">
+      <div class="section-header" id="services-header">
+        <span class="section-tag">O Que Fazemos</span>
+        <h2 class="section-title">Nossos <span class="text-accent">Serviços</span></h2>
+        <p class="section-sub">Do projeto à instalação, entregamos excelência em cada detalhe.</p>
+      </div>
+
+      <div class="services-grid" id="services-grid">
+
+        <div class="service-card" id="service-vidros">
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon-wrap">
+            <span class="service-card__icon">🪟</span>
+          </div>
+          <h3 class="service-card__title">Vidros</h3>
+          <p class="service-card__desc">
+            Vidros temperados, laminados, serigrafados e insulados para janelas, portas, fachadas, box de banheiro e muito mais.
+          </p>
+          <ul class="service-card__list">
+            <li>Vidro temperado</li>
+            <li>Vidro laminado</li>
+            <li>Box de banheiro</li>
+            <li>Fachadas e espelhos</li>
+          </ul>
+          <a href="https://wa.me/5521000000000?text=Olá!%20Tenho%20interesse%20em%20vidros." 
+             class="service-card__link" id="link-vidros" target="_blank" rel="noopener">
+            Solicitar Orçamento ↗
+          </a>
+        </div>
+
+        <div class="service-card service-card--featured" id="service-aluminio">
+          <div class="service-card__glow service-card__glow--purple"></div>
+          <div class="service-card__badge">Destaque</div>
+          <div class="service-card__icon-wrap">
+            <span class="service-card__icon">🏗</span>
+          </div>
+          <h3 class="service-card__title">Alumínio</h3>
+          <p class="service-card__desc">
+            Esquadrias de alumínio de alta performance: janelas, portas, fachadas e corrimões com acabamento premium.
+          </p>
+          <ul class="service-card__list">
+            <li>Janelas e portas</li>
+            <li>Fachadas estruturais</li>
+            <li>Corrimões e guarda-corpos</li>
+            <li>Divisórias corporativas</li>
+          </ul>
+          <a href="https://wa.me/5521000000000?text=Olá!%20Tenho%20interesse%20em%20alumínio." 
+             class="service-card__link" id="link-aluminio" target="_blank" rel="noopener">
+            Solicitar Orçamento ↗
+          </a>
+        </div>
+
+        <div class="service-card" id="service-jatos">
+          <div class="service-card__glow"></div>
+          <div class="service-card__icon-wrap">
+            <span class="service-card__icon">💨</span>
+          </div>
+          <h3 class="service-card__title">Jatos</h3>
+          <p class="service-card__desc">
+            Jateamento em vidros para criação de efeitos translúcidos, privacidade e design exclusivo com padrões personalizados.
+          </p>
+          <ul class="service-card__list">
+            <li>Jato fosco</li>
+            <li>Jato com desenhos</li>
+            <li>Privacidade em vidros</li>
+            <li>Design personalizado</li>
+          </ul>
+          <a href="https://wa.me/5521000000000?text=Olá!%20Tenho%20interesse%20em%20jatos." 
+             class="service-card__link" id="link-jatos" target="_blank" rel="noopener">
+            Solicitar Orçamento ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE ========== -->
+  <section class="section about" id="sobre">
+    <div class="section-container about-grid">
+
+      <div class="about-visual" id="about-visual">
+        <div class="about-img-wrap">
+          <img src="assets/services.png" alt="Alumínio e vidros EP Jato" class="about-img" id="about-img" />
+          <div class="about-img-overlay"></div>
+        </div>
+        <div class="about-badge" id="about-badge">
+          <span class="about-badge__icon">⭐</span>
+          <div>
+            <p class="about-badge__value">Qualidade</p>
+            <p class="about-badge__label">Garantida</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content" id="about-content">
+        <span class="section-tag">Quem Somos</span>
+        <h2 class="section-title">Referência em <span class="text-accent">Vidros & Alumínio</span> no Rio</h2>
+        <p class="about-text">
+          A <strong>EP Jato</strong> é uma empresa sólida no mercado carioca, atuando com excelência no fornecimento e instalação de vidros, esquadrias de alumínio e serviços de jateamento.
+        </p>
+        <p class="about-text">
+          Atendemos desde residências até grandes empreendimentos comerciais, sempre com pronta entrega e compromisso com a qualidade. Nossa equipe técnica especializada garante que cada projeto seja executado com precisão e beleza.
+        </p>
+
+        <div class="about-features" id="about-features">
+          <div class="about-feature" id="feat-entrega">
+            <span class="about-feature__icon">📦</span>
+            <div>
+              <p class="about-feature__title">Pronta Entrega</p>
+              <p class="about-feature__desc">Estoque disponível imediatamente.</p>
+            </div>
+          </div>
+          <div class="about-feature" id="feat-atendimento">
+            <span class="about-feature__icon">🤝</span>
+            <div>
+              <p class="about-feature__title">Atendimento Especializado</p>
+              <p class="about-feature__desc">Consultoria técnica sem custo adicional.</p>
+            </div>
+          </div>
+          <div class="about-feature" id="feat-qualidade">
+            <span class="about-feature__icon">🏆</span>
+            <div>
+              <p class="about-feature__title">Qualidade Premium</p>
+              <p class="about-feature__desc">Materiais certificados e duráveis.</p>
+            </div>
+          </div>
+          <div class="about-feature" id="feat-rapidez">
+            <span class="about-feature__icon">⚡</span>
+            <div>
+              <p class="about-feature__title">Agilidade</p>
+              <p class="about-feature__desc">Do orçamento à instalação com rapidez.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== DIFERENCIAIS ========== -->
+  <section class="section differentials" id="diferenciais">
+    <div class="section-container">
+      <div class="section-header" id="diff-header">
+        <span class="section-tag">Por Que Escolher a EP Jato</span>
+        <h2 class="section-title">Nossos <span class="text-accent">Diferenciais</span></h2>
+      </div>
+
+      <div class="diff-grid" id="diff-grid">
+
+        <div class="diff-card" id="diff-orcamento">
+          <div class="diff-card__number">01</div>
+          <div class="diff-card__icon">📲</div>
+          <h3 class="diff-card__title">Orçamento Rápido</h3>
+          <p class="diff-card__desc">Solicite pelo WhatsApp e receba seu orçamento personalizado em minutos, sem burocracia.</p>
+        </div>
+
+        <div class="diff-card" id="diff-entrega">
+          <div class="diff-card__number">02</div>
+          <div class="diff-card__icon">🚚</div>
+          <h3 class="diff-card__title">Pronta Entrega</h3>
+          <p class="diff-card__desc">Estoque completo para atender sua demanda imediatamente, sem espera e sem atrasos na obra.</p>
+        </div>
+
+        <div class="diff-card" id="diff-tecnica">
+          <div class="diff-card__number">03</div>
+          <div class="diff-card__icon">🔧</div>
+          <h3 class="diff-card__title">Equipe Técnica</h3>
+          <p class="diff-card__desc">Profissionais experientes e treinados para garantir a instalação perfeita de todos os produtos.</p>
+        </div>
+
+        <div class="diff-card" id="diff-localizacao">
+          <div class="diff-card__number">04</div>
+          <div class="diff-card__icon">📍</div>
+          <h3 class="diff-card__title">Localização Estratégica</h3>
+          <p class="diff-card__desc">Localizada na Estrada dos Bandeirantes, facilitando o acesso de toda a Zona Oeste do Rio.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BAND ========== -->
+  <section class="cta-band" id="cta-band">
+    <div class="cta-band__glow" aria-hidden="true"></div>
+    <div class="cta-band__content">
+      <h2 class="cta-band__title">Pronto para transformar <span class="text-accent">sua obra?</span></h2>
+      <p class="cta-band__sub">Fale conosco agora pelo WhatsApp e receba seu orçamento sem compromisso!</p>
+      <a href="https://wa.me/5521000000000?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+         class="btn btn--primary btn--lg" id="btn-cta" target="_blank" rel="noopener">
+        📲 Falar no WhatsApp ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section class="section contact" id="contato">
+    <div class="section-container">
+      <div class="section-header" id="contact-header">
+        <span class="section-tag">Fale Conosco</span>
+        <h2 class="section-title">Entre em <span class="text-accent">Contato</span></h2>
+        <p class="section-sub">Estamos prontos para ajudar no seu projeto. Solicite seu orçamento agora!</p>
+      </div>
+
+      <div class="contact-grid" id="contact-grid">
+
+        <div class="contact-info" id="contact-info">
+
+          <div class="contact-item" id="contact-whatsapp">
+            <div class="contact-item__icon">📲</div>
+            <div class="contact-item__content">
+              <p class="contact-item__label">WhatsApp</p>
+              <a href="https://wa.me/5521000000000" class="contact-item__value" target="_blank" rel="noopener">
+                (21) 00000-0000
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-address">
+            <div class="contact-item__icon">📍</div>
+            <div class="contact-item__content">
+              <p class="contact-item__label">Endereço</p>
+              <address class="contact-item__value" style="font-style:normal;">
+                Estr. dos Bandeirantes, 5115, Lote 71<br/>
+                Rio de Janeiro – RJ
+              </address>
+            </div>
+          </div>
+
+          <div class="contact-item" id="contact-hours">
+            <div class="contact-item__icon">🗓</div>
+            <div class="contact-item__content">
+              <p class="contact-item__label">Horário de Funcionamento</p>
+              <p class="contact-item__value">Segunda à Sexta<br/>8h às 17h30</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-map" id="contact-map">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.987!2d-43.4251!3d-22.9321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde17b5c7000001%3A0x0!2sEstr.%20dos%20Bandeirantes%2C%205115%2C%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
+              width="100%" 
+              height="100%" 
+              style="border:0;"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização EP Jato"
+              id="google-map">
+            </iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Estrada+dos+Bandeirantes+5115+Rio+de+Janeiro" 
+             class="map-link" id="map-link" target="_blank" rel="noopener">
+            📍 Ver no Google Maps ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand" id="footer-brand">
+        <a href="#inicio" class="nav-logo footer-logo" id="footer-logo">
+          <img src="assets/logo.png" alt="EP Jato de Vidros" class="nav-logo-img footer-logo-img" />
+        </a>
+        <p class="footer-tagline">Vidros · Alumínio · Jatos<br/>Sua obra merece o Melhor!</p>
+        <a href="https://wa.me/5521000000000?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+           class="btn btn--primary" id="btn-footer-orcamento" target="_blank" rel="noopener">
+          📲 Orçamento Grátis
+        </a>
+      </div>
+
+      <div class="footer-links" id="footer-links">
+        <h4 class="footer-links__title">Navegação</h4>
+        <ul>
+          <li><a href="#inicio" id="footer-nav-inicio">Início</a></li>
+          <li><a href="#servicos" id="footer-nav-servicos">Serviços</a></li>
+          <li><a href="#sobre" id="footer-nav-sobre">Sobre Nós</a></li>
+          <li><a href="#diferenciais" id="footer-nav-diferenciais">Diferenciais</a></li>
+          <li><a href="#contato" id="footer-nav-contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services" id="footer-services">
+        <h4 class="footer-links__title">Serviços</h4>
+        <ul>
+          <li>Vidros Temperados</li>
+          <li>Vidros Laminados</li>
+          <li>Esquadrias de Alumínio</li>
+          <li>Box de Banheiro</li>
+          <li>Jateamento em Vidros</li>
+          <li>Fachadas</li>
+        </ul>
+      </div>
+
+      <div class="footer-contact" id="footer-contact">
+        <h4 class="footer-links__title">Contato</h4>
+        <p>📍 Estr. dos Bandeirantes, 5115, Lote 71 – RJ</p>
+        <p>🗓 Seg–Sex · 8h às 17h30</p>
+        <p>📲 Atendimento via WhatsApp</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom" id="footer-bottom">
+      <p>© <span id="footer-year">2025</span> EP Jato. Todos os direitos reservados.</p>
+      <p class="footer-bottom__sub">Estr. dos Bandeirantes 5115, Lote 71, Rio de Janeiro – RJ</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/5521000000000?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+     class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
