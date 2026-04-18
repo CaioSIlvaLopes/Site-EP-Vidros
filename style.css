@@ -1039,5 +1039,5 @@ address { font-style: normal; }
   .footer-container { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; }
   .btn { justify-content: center; }
-  .whatsapp-float { bottom: 20px; right: 20px; }
+  .whatsapp-float {display: none;}
 }
