@@ -177,7 +177,6 @@
     animation:wa-pulse 2s ease-out infinite;
     pointer-events:none;
   `;
-  wa.style.position = 'relative';
   wa.appendChild(ring);
 
   const style = document.createElement('style');

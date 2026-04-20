@@ -23,7 +23,15 @@
   /* Typography */
   --font-display: 'Outfit', sans-serif;
   --font-body:    'Inter', sans-serif;
-
+  --font-small-size: 16px;
+  --font-medium-size: 18px;
+  --font-large-size: 20px;
+  --font-xlarge-size: 22px;
+  --font-xxlarge-size: 24px;
+  --font-xxxlarge-size: 26px;
+  --font-xxxxlarge-size: 28px;
+  --font-xxxxxlarge-size: 30px;
+  --font-xxxxxxlarge-size: 32px;
   /* Spacing */
   --section-py: 100px;
   --max-w: 1280px;
@@ -33,7 +41,7 @@
   --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   /* Navbar height — aumentada */
-  --nav-h: 96px;
+  --nav-h: 120px;
 }
 
 html { scroll-behavior: smooth; }
@@ -170,7 +178,7 @@ address { font-style: normal; }
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 72px;
+  height: 120px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -195,9 +203,9 @@ address { font-style: normal; }
   padding: 8px 18px;
   border-radius: 50px;
   font-family: var(--font-display);
-  font-size: large;
+  font-size: var(--font-xlarge-size);
   font-weight: 500;
-  color: var(--clr-muted);
+  color: white);
   transition: color 0.2s, background 0.2s;
 }
 .nav-link:hover, .nav-link.active {
@@ -213,7 +221,7 @@ address { font-style: normal; }
   background: linear-gradient(135deg, var(--clr-purple), var(--clr-purple-2));
   border-radius: 50px;
   font-family: var(--font-display);
-  font-size: 0.9rem;
+  font-size: var(--font-xlarge-size);
   font-weight: 600;
   color: #fff;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -1039,5 +1047,5 @@ address { font-style: normal; }
   .footer-container { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; }
   .btn { justify-content: center; }
-  .whatsapp-float {display: none;}
+  .whatsapp-float { bottom: 20px; right: 20px; }
 }
