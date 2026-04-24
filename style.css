@@ -1180,10 +1180,21 @@ address { font-style: normal; }
   margin-bottom: 8px;
   opacity: 0.9;
 }
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 48px;
+  }
+  .footer-brand, .footer-contact {
+    align-items: center;
+  }
+}
 @media (max-width: 600px) {
   .footer-lists-container {
     gap: 32px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .footer-links li a, .footer-services li {
@@ -1257,7 +1268,8 @@ address { font-style: normal; }
 }
 
 @media (max-width: 900px) {
-  :root { --section-py: 72px; }
+  :root { --section-py: 72px; --nav-h: 100px; }
+  .nav-logo-img { height: 90px; }
   /* .services-grid handled by auto-fit */
   .about-grid      { grid-template-columns: 1fr; gap: 48px; }
   .contact-grid    { grid-template-columns: 1fr; }
@@ -1269,13 +1281,15 @@ address { font-style: normal; }
 }
 
 @media (max-width: 600px) {
-  :root { --section-py: 56px; }
+  :root { --section-py: 56px; --nav-h: 85px; }
+  .nav-logo-img { height: 75px; }
+  .footer-logo-img { height: 45px; }
   .hero-title { font-size: clamp(2.8rem, 14vw, 4rem); }
   .stats-container { flex-direction: column; gap: 32px; }
   .stat-divider { display: none; }
   .diff-grid { grid-template-columns: 1fr; }
   .about-features { grid-template-columns: 1fr; }
-  .footer-container { grid-template-columns: 1fr; }
+  .footer-container { grid-template-columns: 1fr; text-align: center; }
   .hero-actions { flex-direction: column; }
   .btn { justify-content: center; }
   .whatsapp-float { bottom: 20px; right: 20px; }
